@@ -1,0 +1,17 @@
+body{
+    background:linear-gradient(to top,rgb(204,229,255),rgba(204,229,255,0.4));
+    font-size:1.15em;
+    text-align: justify;
+}
+
+#mytitle{
+    color:red;
+}
+
+.h1element{
+    color:aquamarine
+}
+
+h1{
+    color:blue;
+}
