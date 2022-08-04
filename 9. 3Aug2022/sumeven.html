@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick(){
+                let n1=document.getElementById("n1").value;
+                n1=Number(n1);
+                var sum=0;
+                for(var i=0;i<n1;i+=2){
+                    sum+=i;
+                    // const node = document.createElement("li");
+                    // const textnode = document.createTextNode(i);
+                    // node.appendChild(textnode);
+                    // document.getElementById("p1").appendChild(node);
+                }
+                document.getElementById("p2").innerHTML=sum;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" />
+    <button onclick="fnClick()">Click here</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>

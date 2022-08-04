@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: rgba(210, 126, 30, 0.635);
+        }
+
+        #sq{
+            background-color: rgb(255, 55, 0);
+            width:200px;
+            height:200px;
+            margin-top: 200px;
+            margin-left: 45%;
+            border-radius: 0;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 2ms;
+        }
+
+        button{
+            margin-left: 48%;
+            margin-top:50px;
+        }
+
+    </style>
+
+    <script>
+        function fnClick(){
+            document.getElementById("sq").style.borderRadius=50+"%";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fnClick()">Click here</button>
+    <div id="sq"></div>
+</body>
+</html>
