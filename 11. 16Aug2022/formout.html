@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 id="one">
+
+    </h1>
+    <h1 id="two">
+
+    </h1>
+    <h1 id="three">
+
+    </h1>
+
+    <script>
+        document.getElementById("one").innerHTML=localStorage.getItem("name");
+        document.getElementById("two").innerHTML=localStorage.getItem("roll");
+        document.getElementById("three").innerHTML=localStorage.getItem("group");
+        localStorage.removeItem("name");
+        localStorage.removeItem("roll");
+        localStorage.removeItem("group");
+    </script>
+</body>
+</html>
