@@ -5,7 +5,7 @@ import Header from "./component/Header.js";
 function App() {
   return (
     <div className="container">
-    <Header/>
+    <Header title="react header" color="red"/>
     </div>
   );
 }
