@@ -1,0 +1,29 @@
+.App{
+  text-align: center;
+}
+
+.App h1{
+  color:red;
+}
+
+.App p{
+  animation:blink 0.4s linear 0s infinite alternate;
+  font-size: 30px;
+  font-weight: bolder;
+  transition: all;
+}
+
+@keyframes blink{
+  0%{
+    color:blue;
+    font-size:30px;
+  }
+  100%{
+    color:red;
+    font-size: 100px;
+  }
+}
+
+/* .App h2{
+  color:red;
+} */

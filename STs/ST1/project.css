@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url('download.png');
+    background-size: cover;
+}
+
+/*this css is for upper div*/
+#topdiv{
+    height:100px;
+    background-color: rgba(225, 243, 227, 0.893);
+    opacity: 0.6;
+    margin:0 20px;
+    box-shadow: 0px 0px 3px 8px #88888898;
+}
+
+#topdiv p{
+    text-align: center;
+    line-height:100px;
+    color:rgba(33, 36, 34, 0.893);
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 0px 0px 4px rgb(224, 103, 66);
+}
+
+/* this css is for mid div */
+#middiv{
+    height:120px;
+    font-size:30px;
+}
+
+#middiv p{
+    text-align:center;
+    line-height: 170px;
+    color:rgb(249, 249, 250);
+    font-family: Comic Sans MS;
+    text-shadow: 4px 4px 4px grey;
+}
+
+/* this css is for bottom div which contains three more divs */
+#bottomdiv{
+    height:140px;
+    background-image: linear-gradient(to right,rgba(255, 0, 0, 0.463),rgba(255, 255, 0, 0.505));
+    margin:0 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 3px 4px #88888841;
+}
+
+/* indiv1,indiv2,indiv3 are inner divs */
+
+.indiv{
+    width:100px;
+    margin:20px 2px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 5px #88888834;
+    transition-property: all;
+    transition-duration: 0.2s;
+    
+}
+
+.indiv:hover{
+    box-shadow: 0px 0px 8px 7px #88888879;
+    width:110px;
+    margin:20px 4px;
+}
+
+#indiv1{
+    background-color: #e03e3eda;
+    /* opacity: 0.6; */
+}
+
+#indiv1 p{
+    text-align: center;
+    margin-top: 0;
+    color:rgb(250, 253, 248);
+}
+
+#indiv2{
+    background-color: rgb(211, 210, 206);
+    width:85px;
+    border:12px solid rgb(228, 104, 59);
+}
+
+#indiv2 p{
+    text-align: center;
+    margin-top:8px;
+    color:rgb(235, 241, 231);
+}
+
+#indiv3{
+    background-color: rgb(111, 137, 220);
+    color:rgba(228, 238, 227, 0.893);
+}
+
+#indiv3 p{
+    text-align: center;
+    margin-top:30%;
+}
+
+/* this css is for the last 3 divs with 100% width */
+
+.divblock{
+    width:98.95%;
+    height:80px;
+    border-width:8px;
+    border-style: solid;
+    border-color: #c8c8d1f6;
+    border-radius:10px;
+    background-color: #e7e7ed45;
+    box-shadow: 0px 2px 3px 4px #88888898;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.divblock:hover {
+    border-width:8px;
+    box-shadow: 0px 2px 8px 10px #88888898;
+}
+
+.divblock p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    text-shadow: 4px 4px 4px grey;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}

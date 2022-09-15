@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            /* background-color:rgb(255, 170, 0); */
+            background-image: url("download.png");
+            background-size: cover;
+        }
+
+        header{
+            text-align: center;
+            font-size: 40px;
+            /* margin-top: 20px; */
+            line-height: 70px;
+            box-shadow: 0 0 4px 4px rgb(128, 128, 128);
+            background-color: rgba(128, 128, 128, 0.075);
+            color:rgb(6,35,103);
+        }
+
+        #inp{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input{
+            width:80%;
+            height:50px;
+            /* border:2px solid black; */
+            box-shadow: 0 0 1px 1px rgb(128, 128, 128);
+        }
+
+        button{
+            margin-top:10px;
+            width:380px;
+            height:45px;
+            font-size: 18px;
+            background-color:rgba(128, 128, 128, 0.505);
+            box-shadow: 0 0 2px 2px rgb(128, 128, 128);
+            border: 0;
+            color:rgb(6 35 103);
+            font-weight: bold;
+        }
+
+        button:hover{
+            box-shadow: 0 0 4px 4px rgb(128, 128, 128);
+        }
+
+        #out{
+            margin-top:20px;
+            height:300px;
+            /* border:2px solid black; */
+        }
+
+        #res{
+            /* display:none; */
+            width:0px;
+            height:0px;
+            border-radius:0;
+            background-color: rgb(6 35 103);
+            /* border:2px solid black; */
+            margin:8% auto;
+            box-shadow: 0 0 0px 0px rgb(128, 128, 128);
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 2ms;
+            color:white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    </style>
+
+    <script>
+
+        var temp;
+        var rad;
+
+        function makesq(){
+
+            let n=document.getElementById("n1").value;
+            let num=String(n);
+
+            if(num.length!=5 || num==null || num==" "){
+                alert("Please enter a 5 digit number");
+            }
+            else{
+
+                num=Number(num);
+                if(isNaN(num)){
+                    alert("please enter a numeric value");
+                }
+                else{
+                    console.log(num);
+                    temp=0;
+                    while(num>0){
+                        temp=temp+num%10;
+                        num=Math.floor(num/10);
+                    }
+
+                    rad=temp/5;
+
+                    console.log(temp);
+                    console.log(rad);
+
+                    document.getElementById("res").innerHTML="";
+                    document.getElementById("res").style.width=temp+"px";
+                    document.getElementById("res").style.height=temp+"px";
+                    document.getElementById("res").style.borderRadius=rad+"px";
+                    document.getElementById("res").style.boxShadow="0 0 4px 4px rgb(128, 128, 128)";
+
+                }
+
+            }
+
+        }
+
+        function on(){
+            document.getElementById("res").style.width=200+"px";
+            document.getElementById("res").style.height=200+"px";
+            document.getElementById("res").innerHTML="width is: "+temp+"<br>height is: "+temp+"<br>border radius is: "+rad;
+        }
+
+        function off(){
+            makesq();
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <span>ENTER A NUMBER TO CREATE A SQUARE SHAPE</span>
+    </header>
+
+    <div id="inp">
+        <input type="text" name="n1" id="n1" placeholder="Enter a 5 digit number here"/><br>
+        <button onclick="makesq()">Create square shape</button>
+    </div>
+
+    <div id="out">
+        <div id="res" onmouseover="on()" onmouseout="off()"></div>
+    </div>
+    
+</body>
+</html>
