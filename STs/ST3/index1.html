@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index2.css">
+    <title>St2</title>
+</head>
+
+<body>
+
+    <video id="backk" autoplay loop muted>
+        <source src="gifs/space.mp4" type="video/mp4">
+    </video>
+
+    <div id="headd">
+        <h1>CALCULATE YOUR WEIGHT ON DIFFERENT PLANETS</h1>
+    </div>
+
+    <div id="popup" class="typewriter">
+
+        <h1 id="h11">
+            This Webpage will help you to find your weight on different planets.<br>
+            Please enter your current weight.
+        </h1>
+        <input type="number" id="inp" placeholder="weight"/>
+        <button id="bt1" onclick="getinp()">Submit</button>
+
+    </div>
+
+    <div id="midd">
+
+        <div id="midleft">
+
+            <div class="planetcard">
+                <a onclick="calcweight(3.7); changeimg('planets/mercury.jpg'); changename('Mercury');">
+                    <img class="planetimg" src="gifs/mercurygif.gif">
+                    <p class="planetname">Mercury</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(8.87); changeimg('planets/venus.jpg'); changename('Venus');">
+                    <img class="planetimg" src="gifs/venusgif.gif" style="width:100px;">
+                    <p class="planetname">Venus</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(9.8); changeimg('planets/earth.jpg'); changename('Earth');">
+                    <img class="planetimg" src="gifs/earthgif.gif">
+                    <p class="planetname">Earth</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(3.721); changeimg('planets/mars.jpg'); changename('Mars');">
+                    <img class="planetimg" src="gifs/marsgif.gif">
+                    <p class="planetname">Mars</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(24.79); changeimg('planets/jupiter.jpg'); changename('Jupiter');">
+                    <img class="planetimg" src="gifs/jupitergif.gif">
+                    <p class="planetname">Jupiter</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(10.44); changeimg('planets/saturn.jpg'); changename('Saturn');">
+                    <img class="planetimg" src="gifs/saturngif.gif">
+                    <p class="planetname">Saturn</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(8.87); changeimg('planets/uranus.jpg'); changename('Uranus');">
+                    <img class="planetimg" src="gifs/uranusgif.gif">
+                    <p class="planetname">Uranus</p>
+                </a>
+            </div>
+    
+            <div class="planetcard">
+                <a onclick="calcweight(11.15); changeimg('planets/neptune.avif'); changename('Neptune');">
+                    <img class="planetimg" src="gifs/neptune.png">
+                    <p class="planetname">Neptune</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div id="midright">
+
+            <div id="planetimg">
+
+            </div>
+
+            <div id="planetwt">
+
+                <div id="planettext">
+                    <h1>Your weight on <span id="pname">Earth</span> will be <br><span id="outt"></span></h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>

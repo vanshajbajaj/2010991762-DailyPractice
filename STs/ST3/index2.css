@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#backk{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    z-index: -1;
+  }
+  
+
+body{
+    /* background-image:url("gifs/stars.gif"); */
+    /* background-color:#0F3460; */
+    /* background-image: url("gifs/space.mp4"); */
+    background-size: cover;
+    color:#A91079;
+}
+
+#headd{
+    /* background-color:rgba(128, 128, 128, 0.313); */
+    background-color:#2e024980;
+    text-align: center;
+    width:98%;
+    height:100px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 9px 8px #570a57a8;
+}
+
+#headd h1{
+    line-height:100px;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+    color:#A91079;
+    /* text-shadow:0px 0px 18px#570A57; */
+    text-shadow: 0 0 3px #570A57, 0 0 5px rgba(255, 255, 255, 0.336);
+}
+
+#popup{
+    /* display:none; */
+    background-color:#2e024980 ;
+    height:78vh;
+    width:80%;
+    margin:1.5% auto;
+    border:0.1px solid rgba(128, 0, 107, 0);
+    box-shadow: 0px 0px 9px 8px #570a57a8, 0px 0px 1px 1px rgba(255, 255, 255, 0.475);
+    /* transition: opacity 2s ease-in-out; */
+    text-shadow: 0 0 3px #570A57, 0 0 5px rgba(255, 255, 255, 0.336);
+    transition: opacity 2s ease-out;
+}
+
+/* #loadd{
+    visibility: hidden;
+    height:78vh;
+    width:80%;
+    margin:20px auto;
+    background-color: white;
+    transition: all 4s linear;
+    animation: fadee 4s linear 0s;
+} 
+/* 
+@keyframes fadee{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin:100px auto;
+    letter-spacing: .15em;
+    text-align: center;
+    font-size: 30px;
+    animation: 
+      typing 3.5s steps(40, end),
+      blinker .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinker {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  #inp{
+    height:45px;
+    font-size: 30px;
+    margin:1.5% 35%;
+    box-shadow: 0px 0px 9px 8px #570a57a8, 0px 0px 1px 1px rgba(255, 255, 255, 0.475);
+    background-color: black;
+    color:white;
+    border:0px;
+    text-align: center;
+  }
+
+  #bt1{
+    margin:1.5% 46%;
+    width:100px;
+    height:20px;
+    box-shadow: 0px 0px 9px 8px #570a57a8, 0px 0px 1px 1px rgba(255, 255, 255, 0.475);
+    background-color: #A91079;
+    color:#2d0e40;
+    font-weight: bolder;
+  }
+
+#midd{
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    height: 78vh;
+    margin:17px 15px;
+    /* border:2px solid red; */
+    flex-direction: row;
+    justify-content: space-around;
+    display: none;
+}
+
+#midleft{
+    height:100%;
+    width:30%;
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0px 0px 9px 8px #570a57a8, 0px 0px 1px 1px rgba(255, 255, 255, 0.475);
+    
+}
+
+.planetcard{
+    width:45%;
+    height:23%;
+    /* border:2px solid blue; */
+    margin-top:5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.planetcard:hover{
+    text-shadow: 0 0 3px #570A57, 0 0 5px rgba(255, 255, 255, 0.511);
+}
+
+.planetimg{
+    margin-left:28%;
+    width:90px;
+    height:85px;
+}
+
+.planetname{
+    text-align: center;
+}
+
+#midright{
+    height:100%;
+    width:65%;
+    /* border:2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+
+#planetimg{
+    width:50%;
+    /* border:2px solid blue; */
+    height:98%;
+    background-image: url("planets/neptune.avif");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 9px 8px #570a57a8, 0px 0px 1px 1px rgba(255, 255, 255, 0.475);
+}
+
+#planettext{
+    height:50%;
+    width:100%;
+    /* border:2px solid blue; */
+    margin-top: 25%;
+    line-height: 100px;
+}
+
+#planetwt{
+    background-color: #2d0e408a;
+    width:50%;
+    /* border:2px solid blue; */
+    height:98%;
+    text-align: center;
+    /* line-height: 300px; */
+    text-shadow: 0 0 3px #570A57, 0 0 5px rgba(255, 255, 255, 0.336);
+}
+
+#outt{
+    color:blue;
+    font-size: 80px;
+}
+
+
